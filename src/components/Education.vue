@@ -1,5 +1,6 @@
 <template>
     <div class="w-100 bg-gray-100 dark:bg-gray-900">
+        <h1 class="text-center text-5xl mb-4 dark:text-gray-200">Formations</h1>
         <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50">
             <!-- fade in of the timeline bar -->
             <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
