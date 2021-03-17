@@ -1,7 +1,7 @@
 <template>
     <!-- Pinned to top right corner-->
-    <div class="text-2xl absolute top-0 right-0 h-12 w-18 p-4">
-        <button class="js-change-theme focus:outline-none" @click="toggleDarkMode()">
+    <div class="text-3xl fixed top-0 right-0 h-12 w-18 p-4">
+        <button class="p-1 js-change-theme rounded ring-offset-2 ring-offset-green-300 focus:outline-none focus:ring-2 focus:ring-green-700 focus:border-transparent" @click="toggleDarkMode()">
             {{ logo }}
         </button>
     </div>
