@@ -1,10 +1,10 @@
 <template>
     <!-- TODO: optimize image delivery size Photo by <a href="https://unsplash.com/@martinjernberg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Martin Jernberg</a> on <a href="/t/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
    -->
-    <div class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-gray-100 dark:bg-gray-900">
-        <div class="bg-cover" style="background-image: url('/src/assets/home-background-small.jpg')">
+    <div class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-gray-100 dark:bg-gray-900 overflow-auto">
+        <div class="bg-cover min-h-screen" style="background-image: url('/src/assets/home-background-small.jpg')">
             <div class="bg-gradient-to-b from-transparent via-transparent to-gray-100 dark:to-gray-900 bg-opacity-60">
-                <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto py-32 lg:my-0">
+                <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto py-24 lg:my-0">
                     <!--Main Col-->
                     <div
                         id="profile"
@@ -177,22 +177,24 @@
                 </div>
             </div>
         </div>
-        <SectionNav></SectionNav>
-        <Education></Education>
+        <SectionNav id="section-nav"></SectionNav>
+        <router-view />
     </div>
 </template>
 
 <script>
 import DarkModeButton from './DarkModeButton.vue'
-import Education from './Education.vue'
 import SectionNav from './SectionNav.vue'
+import Education from './Education.vue'
+import Projects from './Projects.vue'
 
 export default {
     components: {
         DarkModeButton,
-        Education,
         SectionNav,
-    },
+        Education,
+        Projects,
+    }
 }
 </script>
 
