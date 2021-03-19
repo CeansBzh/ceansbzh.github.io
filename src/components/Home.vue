@@ -1,7 +1,9 @@
 <template>
     <!-- TODO: optimize image delivery size Photo by <a href="https://unsplash.com/@martinjernberg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Martin Jernberg</a> on <a href="/t/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
    -->
-    <div class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-gray-100 dark:bg-gray-900 overflow-auto">
+    <div
+        class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-gray-100 dark:bg-gray-900 overflow-auto"
+    >
         <div class="bg-cover min-h-screen" style="background-image: url('/src/assets/home-background-small.jpg')">
             <div class="bg-gradient-to-b from-transparent via-transparent to-gray-100 dark:to-gray-900 bg-opacity-60">
                 <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto py-24 lg:my-0">
@@ -65,11 +67,12 @@
                             </p>
 
                             <div class="pt-12 pb-8">
-                                <button
+                                <a
                                     class="bg-green-700 hover:bg-green-900 bg-opacity-80 text-white font-bold py-2 px-4 rounded-full"
+                                    href="mailto:ebriantais@orange.fr?subject=Travaillons%20ensemble&body=Salut%20Elouan%20!"
                                 >
                                     Envoyez-moi un message
-                                </button>
+                                </a>
                             </div>
 
                             <div
@@ -194,7 +197,7 @@ export default {
         SectionNav,
         Education,
         Projects,
-    }
+    },
 }
 </script>
 
