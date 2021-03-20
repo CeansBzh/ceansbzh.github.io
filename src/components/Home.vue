@@ -1,6 +1,4 @@
 <template>
-    <!-- TODO: optimize image delivery size Photo by <a href="https://unsplash.com/@martinjernberg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Martin Jernberg</a> on <a href="/t/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-   -->
     <div
         class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-gray-100 dark:bg-gray-900 overflow-auto"
     >
@@ -48,7 +46,7 @@
                                     />
                                 </svg>
                                 <a
-                                    class="block hover:underline"
+                                    class="hover:underline"
                                     href="https://goo.gl/maps/CPXnFDYWY8wDPtwF8"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -138,7 +136,7 @@
                                 ></a>
                             </div>
 
-                            <!-- Use https://simpleicons.org/ to find the svg for your preferred product -->
+                            <!-- https://simpleicons.org/ for products svg logos -->
                         </div>
                     </div>
 
@@ -149,10 +147,25 @@
                             src="/src/assets/photo-big.jpg"
                             class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
                         />
-                        <!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
                     </div>
 
                     <DarkModeButton></DarkModeButton>
+                </div>
+                <div class="mr-2 text-right text-xs lg:text-sm text-gray-200 text-opacity-60">
+                    Photo par
+                    <a
+                        class="hover:underline"
+                        target="_blank"
+                        href="https://unsplash.com/@martinjernberg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                        >Martin Jernberg</a
+                    >
+                    on
+                    <a
+                        class="hover:underline"
+                        target="_blank"
+                        href="https://unsplash.com/t/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                        >Unsplash</a
+                    >
                 </div>
             </div>
         </div>
