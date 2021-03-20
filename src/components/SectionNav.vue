@@ -1,5 +1,5 @@
 <template>
-    <div class="rounded-lg bg-white bg-opacity-75 shadow-lg dark:bg-gray-200 mb-5 mx-4 p-1 flex justify-center">
+    <div class="rounded-lg bg-white bg-opacity-75 shadow-lg dark:bg-gray-200 m-5 p-1 flex justify-center">
         <router-link
             class="flex flex-1 items-center justify-center p-2 text-green-700 hover:text-green-600 font-semibold"
             :to="{ name: 'formation' }"
