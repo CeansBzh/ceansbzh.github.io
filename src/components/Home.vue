@@ -151,7 +151,7 @@
 
                     <DarkModeButton></DarkModeButton>
                 </div>
-                <div class="mr-2 text-right text-xs lg:text-sm text-gray-200 text-opacity-60">
+                <div class="mr-2 text-right text-xs lg:text-sm text-gray-700 dark:text-gray-200 text-opacity-60">
                     Photo par
                     <a
                         class="hover:underline"
