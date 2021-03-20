@@ -4,8 +4,10 @@
     <div
         class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-gray-100 dark:bg-gray-900 overflow-auto"
     >
-        <div class="bg-cover min-h-screen" style="background-image: url('/src/assets/home-background-small.jpg')">
-            <div class="bg-gradient-to-b from-transparent via-transparent to-gray-100 dark:to-gray-900 bg-opacity-60">
+        <div id="bg-image" class="bg-cover bg-center bg-no-repeat">
+            <div
+                class="bg-gradient-to-b from-transparent via-transparent to-gray-100 dark:to-gray-900 bg-opacity-60 min-h-screen"
+            >
                 <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto py-24 lg:my-0">
                     <!--Main Col-->
                     <div
@@ -188,5 +190,39 @@ feather {
     stroke-linecap: round;
     stroke-linejoin: round;
     fill: none;
+}
+
+#bg-image {
+    background-image: url('/src/assets/background/home-background-default.jpg');
+}
+
+@screen sm {
+    #bg-image {
+        background-image: url('/src/assets/background/home-background-small.jpg');
+    }
+}
+
+@screen md {
+    #bg-image {
+        background-image: url('/src/assets/background/home-background-medium.jpg');
+    }
+}
+
+@screen lg {
+    #bg-image {
+        background-image: url('/src/assets/background/home-background-large.jpg');
+    }
+}
+
+@screen xl {
+    #bg-image {
+        background-image: url('/src/assets/background/home-background-xl.jpg');
+    }
+}
+
+@screen 2xl {
+    #bg-image {
+        background-image: url('/src/assets/background/home-background-2xl.jpg');
+    }
 }
 </style>
