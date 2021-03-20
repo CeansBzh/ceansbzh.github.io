@@ -16,7 +16,7 @@
                             <!-- Image for mobile view-->
                             <div
                                 class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
-                                style="background-image: url('/src/assets/photo-surprise.jpg')"
+                                style="background-image: url('/src/assets/photo-mini.jpg')"
                             ></div>
 
                             <h1 class="text-3xl font-bold pt-8 lg:pt-0">Elouan Briantais</h1>
