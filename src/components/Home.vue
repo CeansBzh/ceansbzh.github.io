@@ -9,14 +9,13 @@
                 <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto py-24 lg:my-0">
                     <!--Main Col-->
                     <div
-                        id="profile"
                         class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white dark:bg-gray-900 dark:text-gray-100 bg-opacity-75 mx-6 lg:mx-0"
                     >
                         <div class="p-4 md:p-12 text-center lg:text-left">
                             <!-- Image for mobile view-->
                             <div
+                                id="mobile-photo"
                                 class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
-                                style="background-image: url('/src/assets/photo-mini.jpg')"
                             ></div>
 
                             <h1 class="text-3xl font-bold pt-8 lg:pt-0">Elouan Briantais</h1>
@@ -208,6 +207,10 @@ feather {
 
 #bg-image {
     background-image: url('/src/assets/background/home-background-default.jpg');
+}
+
+#mobile-photo {
+    background-image: url('/src/assets/photo-mini.jpg');
 }
 
 @screen sm {
