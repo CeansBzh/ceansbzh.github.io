@@ -146,6 +146,7 @@
                         <img
                             src="/src/assets/photo-big.jpg"
                             class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
+                            alt="Photo de Elouan Briantais souriant :)"
                         />
                     </div>
 
