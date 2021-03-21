@@ -51,7 +51,7 @@
         </router-link>
         <router-link
             class="flex flex-1 items-center justify-center p-2 text-green-700 hover:text-green-600 font-semibold"
-            :to="{ name: 'projets' }"
+            :to="{ name: 'experiences' }"
         >
             <div class="text-center">
                 <svg
