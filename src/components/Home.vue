@@ -159,13 +159,6 @@
                         href="https://unsplash.com/@martinjernberg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                         >Martin Jernberg</a
                     >
-                    on
-                    <a
-                        class="hover:underline"
-                        target="_blank"
-                        href="https://unsplash.com/t/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                        >Unsplash</a
-                    >
                 </div>
             </div>
         </div>
