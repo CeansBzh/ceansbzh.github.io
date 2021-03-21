@@ -170,16 +170,12 @@
 <script>
 import DarkModeButton from './DarkModeButton.vue'
 import SectionNav from './SectionNav.vue'
-import Education from './Education.vue'
-import Projects from './Projects.vue'
 import { directive } from 'vue-tippy'
 
 export default {
     components: {
         DarkModeButton,
         SectionNav,
-        Education,
-        Projects,
     },
     directives: {
         tippy: directive,
