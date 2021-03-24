@@ -70,7 +70,7 @@ export default {
                 {
                     title: 'Rhiven',
                     shortDesc:
-                        "Site internet d'une communauté de jeu vidéo. Destiné à servir de mutliples fonctions directement en lien avec le jeu.",
+                        "Site internet d'une communauté de jeu vidéo. Destiné à servir de multiples fonctions directement en lien avec le jeu.",
                     desc:
                         "Rhiven est un projet initié par un groupe d'amis qui hébergent un serveur de jeu (Unturned). Nous souhaitions proposer la meilleure qualité de jeu grâce à des fonctionnalités innovantes. C'est dans le cadre de ces fonctionnalités qu'est né le site internet de Rhiven.",
                     completion: 90,
