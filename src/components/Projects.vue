@@ -5,7 +5,7 @@
             :key="project.title"
             :class="[index === 0 ? 'col-span-full' : 'justify-self-center']"
         >
-            <MainProject v-if="index === 0" v-bind:project="project" />
+            <ProjectsHighlighted v-if="index === 0" v-bind:project="project" />
             <div class="max-w-xs rounded overflow-hidden shadow-xl dark:shadow-none dark:bg-gray-100" v-else>
                 <img
                     class="w-full border-b-2"
@@ -48,11 +48,11 @@
 </template>
 
 <script>
-import MainProject from './MainProject.vue'
+import ProjectsHighlighted from './ProjectsHighlighted.vue'
 
 export default {
     components: {
-        MainProject,
+        ProjectsHighlighted,
     },
     mounted: function () {
         this.$nextTick(function () {

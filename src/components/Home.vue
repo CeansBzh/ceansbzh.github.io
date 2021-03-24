@@ -158,7 +158,7 @@
 </template>
 
 <script>
-import DarkModeButton from './DarkModeButton.vue'
+import DarkModeButton from './TheDarkModeButton.vue'
 import SectionNav from './SectionNav.vue'
 import { directive } from 'vue-tippy'
 
