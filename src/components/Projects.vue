@@ -1,5 +1,6 @@
 <template>
-    <div class="container mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <ProjectsModal ref="projectsModal" v-bind:project="currentProject" />
+    <div class="container mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-20">
         <div
             v-for="(project, index) in projects"
             :key="project.title"
@@ -38,6 +39,7 @@
                     </p>
                     <button
                         class="mt-2 md:mt-5 p-3 px-5 rounded bg-green-700 text-white font-bold text-sm hover:bg-green-900"
+                        @click="openModal(project)"
                     >
                         Voir les détails
                     </button>
@@ -49,10 +51,12 @@
 
 <script>
 import ProjectsHighlighted from './ProjectsHighlighted.vue'
+import ProjectsModal from './ProjectsModal.vue'
 
 export default {
     components: {
         ProjectsHighlighted,
+        ProjectsModal,
     },
     mounted: function () {
         this.$nextTick(function () {
@@ -64,8 +68,15 @@ export default {
             window.scrollTo({ top: y, behavior: 'smooth' })
         })
     },
+    methods: {
+        openModal(project) {
+            this.currentProject = project
+            this.$refs.projectsModal.openModal()
+        },
+    },
     data() {
         return {
+            currentProject: null,
             projects: [
                 {
                     title: 'Rhiven',
