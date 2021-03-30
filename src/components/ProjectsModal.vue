@@ -25,7 +25,7 @@
                             d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"
                         ></path>
                     </svg>
-                    (Esc)
+                    <p class="hidden md:block">(Esc)</p>
                 </div>
 
                 <div class="flex justify-between items-center py-5 px-10">
@@ -34,20 +34,30 @@
 
                 <!-- Add margin if you want to see grey behind the modal-->
                 <div class="container mx-auto h-auto text-left p-4 bg-gray-700 rounded">
-                    <p>test</p>
+                    <img class="mx-auto mb-3 xl:max-w-6xl" :src="project.mainImageUrl" :alt="project.mainImageAlt" />
+
+                    <div class="lg:px-10">
+                        <div>
+                            <h3 class="text-lg border-b border-white mb-2">Description du projet</h3>
+                            <p class="text-sm lg:text-base text-justify">{{ project.desc }}</p>
+                        </div>
+                    </div>
 
                     <!--Footer-->
-                    <div class="flex justify-end pt-2">
-                        <button
-                            class="px-4 bg-transparent p-3 rounded-lg text-indigo-500 hover:bg-gray-100 hover:text-indigo-400 mr-2"
+                    <div class="flex justify-end space-x-2.5 pt-2">
+                        <a
+                            class="mt-2 md:mt-5 p-3 px-5 rounded border-4 border-green-700 text-white font-bold text-sm hover:bg-green-900 focus:ring-4 focus:ring-green-500 focus:ring-opacity-50"
+                            v-if="project.gitLink"
+                            :href="project.gitLink"
+                            target="_blank"
+                            v-tippy="{ content: project.gitName }"
+                            >Voir sur Github</a
                         >
-                            Action
-                        </button>
                         <button
-                            class="px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400"
+                            class="mt-2 md:mt-5 p-3 px-5 rounded bg-green-700 text-white font-bold text-sm hover:bg-green-900 focus:ring-4 focus:ring-green-500 focus:ring-opacity-50"
                             @click="closeModal"
                         >
-                            Close
+                            Fermer
                         </button>
                     </div>
                 </div>
@@ -57,12 +67,8 @@
 </template>
 
 <script>
-import { VueperSlides, VueperSlide } from 'vueperslides'
-import 'vueperslides/dist/vueperslides.css'
-
 export default {
     name: 'Modal',
-    components: { VueperSlides, VueperSlide },
     props: {
         project: {
             type: Object,
@@ -71,18 +77,6 @@ export default {
     data() {
         return {
             show: false,
-            pauseOnHover: true,
-            autoPlaying: true,
-            internalAutoPlaying: true,
-            slides: [
-                {
-                    id: 'slide-1',
-                    title: 'Slide <b style="font-size: 1.3em;color: yellow">#1</b>',
-                    content:
-                        'Slide title can be HTML.<br>And so does the slide content, <span style="font-size: 1.2em;color: yellow">why not?</span>',
-                },
-                // Other slides...
-            ],
         }
     },
     methods: {
