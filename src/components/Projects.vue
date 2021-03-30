@@ -16,7 +16,10 @@
                 />
                 <div class="px-6 py-4">
                     <div class="flex justify-between font-bold text-xl mb-2">
-                        <p>{{ project.title }}</p>
+                        <div>
+                            <p class="inline-block">{{ project.title }}</p>
+                            <p class="inline-block ml-1 text-sm font-extralight" v-if="project.completion">- {{ project.completion }}%</p>
+                        </div>
                         <a
                             v-if="project.gitLink"
                             :href="project.gitLink"
