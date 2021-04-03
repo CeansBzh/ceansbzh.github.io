@@ -41,6 +41,10 @@
                             <h3 class="text-lg border-b border-white mb-2">Description du projet</h3>
                             <p class="text-sm lg:text-base text-justify">{{ project.desc }}</p>
                         </div>
+                        <div>
+                            <h3 class="text-lg border-b border-white mb-2">Technologies utilisées</h3>
+                            <Technologies></Technologies>
+                        </div>
                     </div>
 
                     <!--Footer-->
@@ -67,8 +71,13 @@
 </template>
 
 <script>
+import Technologies from './Technologies.vue'
+
 export default {
     name: 'Modal',
+    components: {
+        Technologies,
+    },
     props: {
         project: {
             type: Object,
