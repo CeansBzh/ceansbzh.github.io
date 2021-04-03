@@ -174,16 +174,6 @@ export default {
 </script>
 
 <style>
-feather {
-    width: 24px;
-    height: 24px;
-    stroke: currentColor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: none;
-}
-
 #bg-image {
     background-image: url('/src/assets/background/home-background-default.jpg');
 }
