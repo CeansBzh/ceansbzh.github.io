@@ -99,7 +99,7 @@ export default {
                     desc:
                         "J'ai voulu créer un portfolio dans le cadre de ma recherche d'alternance. C'est à mon avis un bon moyen de montrer ses compétences, et également le fait que l'on soit motivé à faire ce travail. J'ai voulu réaliser ce portfolio avec Vue.js car c'est un framework qui me tiens à coeur. Je l'avais vaguement exploré lors de mon projet de bac d'ISN en terminale, et depuis je ne l'avais pas réutilisé.",
                     completion: 60,
-                    skills: ['Vue.js', 'Tailwind'],
+                    skills: ['Vue', 'TailwindCSS'],
                     gitLink: 'https://github.com/CeansBzh/CeansBzh.github.io',
                     gitName: 'CeansBzh.github.io',
                     mainImageUrl: '/src/assets/portfolio-main.jpg',
