@@ -1,60 +1,46 @@
 <template>
-    <div class="max-w-xs">
-        <TechnologyIconBase><HTML5 /></TechnologyIconBase>
+    <div class="p-2 flex items-stretch">
+        <TechnologyIconBase v-for="tech in techs" :key="tech" :techName="tech">
+            <Component :is="tech"></Component>
+        </TechnologyIconBase>
     </div>
 </template>
 
 <script>
 import TechnologyIconBase from './TechnologyIconBase.vue'
 import HTML5 from './icons/icon-html5.svg'
+import Bootstrap from './icons/icon-bootstrap.svg'
+import CSS3 from './icons/icon-css3.svg'
+import Javascript from './icons/icon-javascript.svg'
+import npm from './icons/icon-npm.svg'
+import Vue from './icons/icon-vue.svg'
+import PHP from './icons/icon-php.svg'
+import Git from './icons/icon-git.svg'
+import Composer from './icons/icon-composer.svg'
+import MySQL from './icons/icon-mysql.svg'
+import Laravel from './icons/icon-laravel.svg'
+import TailwindCSS from './icons/icon-tailwindcss.svg'
 
 export default {
     name: 'Technologies',
+    props: {
+        techs: Array,
+    },
     components: {
         TechnologyIconBase,
         HTML5,
+        Bootstrap,
+        CSS3,
+        Javascript,
+        npm,
+        Vue,
+        PHP,
+        Git,
+        Composer,
+        MySQL,
+        Laravel,
+        TailwindCSS,
     },
-    projects: [
-        {
-            title: 'HTML5',
-        },
-        {
-            title: 'CSS3',
-        },
-        {
-            title: 'Javascript',
-        },
-        {
-            title: 'npm',
-        },
-        {
-            title: 'Vue.js',
-        },
-        {
-            title: 'Vite',
-        },
-        {
-            title: 'PHP',
-        },
-        {
-            title: 'Git',
-        },
-        {
-            title: 'Composer',
-        },
-        {
-            title: 'MySQL',
-        },
-        {
-            title: 'Laravel',
-        },
-        {
-            title: 'Tailwind CSS',
-        },
-        {
-            title: 'Bootstrap',
-        },
-    ],
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
     <transition name="fade">
         <div
-            class="z-10 fixed w-full h-full top-0 left-0 flex items-center justify-center dark:text-gray-100"
+            class="z-20 fixed w-full h-full top-0 left-0 flex items-center justify-center dark:text-gray-100"
             :class="[show ? '' : 'pointer-events-none']"
             v-if="show"
             @keydown.esc="closeModal"
@@ -38,12 +38,12 @@
 
                     <div class="lg:px-10">
                         <div>
-                            <h3 class="text-lg border-b border-white mb-2">Description du projet</h3>
+                            <h3 class="text-lg border-b border-white mt-4 mb-2">Description du projet</h3>
                             <p class="text-sm lg:text-base text-justify">{{ project.desc }}</p>
                         </div>
                         <div>
-                            <h3 class="text-lg border-b border-white mb-2">Technologies utilisées</h3>
-                            <Technologies></Technologies>
+                            <h3 class="text-lg border-b border-white mt-4 mb-2">Technologies utilisées</h3>
+                            <Technologies :techs="project.skills"></Technologies>
                         </div>
                     </div>
 
