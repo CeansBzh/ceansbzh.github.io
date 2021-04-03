@@ -37,11 +37,11 @@
                     <img class="mx-auto mb-3 xl:max-w-6xl" :src="project.mainImageUrl" :alt="project.mainImageAlt" />
 
                     <div class="lg:px-10">
-                        <div>
+                        <div v-if="project.desc">
                             <h3 class="text-lg border-b border-white mt-4 mb-2">Description du projet</h3>
                             <p class="text-sm lg:text-base text-justify">{{ project.desc }}</p>
                         </div>
-                        <div>
+                        <div v-if="project.skills">
                             <h3 class="text-lg border-b border-white mt-4 mb-2">Technologies utilisées</h3>
                             <Technologies :techs="project.skills"></Technologies>
                         </div>
