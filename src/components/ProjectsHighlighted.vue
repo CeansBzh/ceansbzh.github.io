@@ -32,6 +32,7 @@
                 </p>
                 <button
                     class="mt-2 md:mt-5 p-3 px-5 rounded bg-green-700 text-white font-bold text-sm hover:bg-green-900"
+                    @click="this.$parent.openModal(project)"
                 >
                     Voir les détails
                 </button>
