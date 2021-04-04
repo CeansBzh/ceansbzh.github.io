@@ -39,7 +39,11 @@
                     <div class="lg:px-10">
                         <div v-if="project.desc">
                             <h3 class="text-lg border-b border-white mt-4 mb-2">Description du projet</h3>
-                            <p class="text-sm lg:text-base text-justify">{{ project.desc }}</p>
+                            <div class="text-sm lg:text-base text-justify">
+                                <p v-for="desc in project.desc.split('\n')" :key="desc">
+                                    {{ desc }}
+                                </p>
+                            </div>
                         </div>
                         <div v-if="project.skills">
                             <h3 class="text-lg border-b border-white mt-4 mb-2">Technologies utilisées</h3>
