@@ -1,5 +1,5 @@
 <template>
-    <div class="rounded bg-gray-800 bg-opacity-70 m-1 grid text-center p-2">
+    <div class="rounded bg-green-700 dark:bg-gray-800 dark:bg-opacity-70 m-1 grid text-center p-2">
         <div class="size-icon mx-auto">
             <slot />
         </div>
