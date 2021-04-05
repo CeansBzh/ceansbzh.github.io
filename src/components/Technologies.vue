@@ -1,7 +1,7 @@
 <template>
-    <div class="p-2 flex items-stretch">
+    <div class="px-2 pt-1 flex items-stretch">
         <TechnologyIconBase v-for="tech in techs" :key="tech" :techName="tech">
-            <Component :is="tech"></Component>
+            <Component :is="tech" class="fill-current text-green-700"></Component>
         </TechnologyIconBase>
     </div>
 </template>
@@ -16,6 +16,7 @@ import npm from './icons/icon-npm.svg'
 import Vue from './icons/icon-vue.svg'
 import PHP from './icons/icon-php.svg'
 import Git from './icons/icon-git.svg'
+import Github from './icons/icon-github.svg'
 import Composer from './icons/icon-composer.svg'
 import MySQL from './icons/icon-mysql.svg'
 import Laravel from './icons/icon-laravel.svg'
@@ -40,6 +41,7 @@ export default {
         MySQL,
         Laravel,
         TailwindCSS,
+        Github,
     },
 }
 </script>
