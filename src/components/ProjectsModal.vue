@@ -39,8 +39,8 @@
                     <div class="lg:px-10">
                         <div v-if="project.desc">
                             <h3 class="text-lg border-b border-white mt-4 mb-2">Description du projet</h3>
-                            <div class="text-sm lg:text-base text-justify">
-                                <p v-for="desc in project.desc.split('\n')" :key="desc">
+                            <div class="text-sm lg:text-base text-justify px-3">
+                                <p class="mt-1" v-for="desc in project.desc.split('\n')" :key="desc">
                                     {{ desc }}
                                 </p>
                             </div>
