@@ -7,7 +7,7 @@
             @keydown.esc="closeModal"
             tabindex="0"
         >
-            <div class="absolute w-full h-full bg-white dark:bg-gray-800 opacity-95"></div>
+            <div class="absolute w-full h-full bg-gray-300 dark:bg-gray-800 opacity-95"></div>
 
             <div class="fixed w-full h-full z-50 overflow-y-auto">
                 <div
@@ -33,12 +33,14 @@
                 </div>
 
                 <!-- Add margin if you want to see grey behind the modal-->
-                <div class="container mx-auto h-auto text-left p-4 bg-gray-700 rounded">
+                <div class="container mx-auto h-auto text-left p-4 bg-gray-200 dark:bg-gray-700 rounded">
                     <img class="mx-auto mb-3 xl:max-w-6xl" :src="project.mainImageUrl" :alt="project.mainImageAlt" />
 
                     <div class="lg:px-10">
                         <div v-if="project.desc">
-                            <h3 class="text-lg border-b border-white mt-4 mb-2">Description du projet</h3>
+                            <h3 class="text-lg border-b border-gray-500 dark:border-white mt-4 mb-2">
+                                Description du projet
+                            </h3>
                             <div class="text-sm lg:text-base text-justify px-3">
                                 <p class="mt-1" v-for="desc in project.desc.split('\n')" :key="desc">
                                     {{ desc }}
@@ -46,7 +48,9 @@
                             </div>
                         </div>
                         <div v-if="project.skills">
-                            <h3 class="text-lg border-b border-white mt-4 mb-2">Technologies utilisées</h3>
+                            <h3 class="text-lg border-b border-gray-500 dark:border-white mt-4 mb-2">
+                                Technologies utilisées
+                            </h3>
                             <Technologies :techs="project.skills"></Technologies>
                         </div>
                     </div>
@@ -54,7 +58,7 @@
                     <!--Footer-->
                     <div class="flex justify-end space-x-2.5 pt-2">
                         <a
-                            class="mt-2 md:mt-5 p-3 px-5 rounded border-4 border-green-700 text-white font-bold text-sm hover:bg-green-900 focus:ring-4 focus:ring-green-500 focus:ring-opacity-50"
+                            class="mt-2 md:mt-5 p-3 px-5 rounded border-4 border-green-800 dark:border-green-700 bg-green-700 dark:bg-transparent text-white font-bold text-sm hover:bg-green-900 focus:ring-4 focus:ring-green-500 focus:ring-opacity-50"
                             v-if="project.gitLink"
                             :href="project.gitLink"
                             target="_blank"

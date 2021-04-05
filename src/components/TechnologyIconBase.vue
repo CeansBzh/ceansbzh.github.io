@@ -3,7 +3,7 @@
         <div class="size-icon mx-auto">
             <slot />
         </div>
-        <p class="mt-1 self-end">{{ techName }}</p>
+        <p class="mt-1 self-end text-white dark:text-current">{{ techName }}</p>
     </div>
 </template>
 

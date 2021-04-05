@@ -1,7 +1,7 @@
 <template>
     <div class="px-2 pt-1 flex items-stretch">
         <TechnologyIconBase v-for="tech in techs" :key="tech" :techName="tech">
-            <Component :is="tech" class="fill-current text-green-700"></Component>
+            <Component :is="tech" class="fill-current text-gray-200 dark:text-green-700"></Component>
         </TechnologyIconBase>
     </div>
 </template>
