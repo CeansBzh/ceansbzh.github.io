@@ -1,7 +1,7 @@
 <template>
     <transition name="fade">
         <div
-            class="z-20 fixed w-full h-full top-0 left-0 flex items-center justify-center dark:text-gray-100"
+            class="z-20 fixed w-full h-full top-0 left-0 flex items-center justify-center dark:text-gray-100 overflow-hidden"
             :class="[show ? '' : 'pointer-events-none']"
             v-if="show"
             @keydown.esc="closeModal"
@@ -9,7 +9,7 @@
         >
             <div class="absolute w-full h-full bg-gray-300 dark:bg-gray-800 opacity-95"></div>
 
-            <div class="fixed w-full h-full z-50 overflow-y-auto">
+            <div ref="modalContainer" class="fixed w-full h-full z-50 overflow-y-auto">
                 <div
                     class="absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-black dark:text-gray-100 text-sm z-50"
                     @click="closeModal"
@@ -98,12 +98,13 @@ export default {
     },
     methods: {
         closeModal() {
+            this.$refs.modalContainer.classList.replace('overflow-y-auto', 'overflow-y-hidden')
             this.show = false
             document.querySelector('body').classList.remove('overflow-hidden')
         },
         openModal() {
-            this.show = true
             document.querySelector('body').classList.add('overflow-hidden')
+            this.show = true
             this.$nextTick(() => {
                 this.$el.focus()
             })
