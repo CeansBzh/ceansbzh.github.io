@@ -21,6 +21,7 @@ import Composer from './icons/icon-composer.svg'
 import MySQL from './icons/icon-mysql.svg'
 import Laravel from './icons/icon-laravel.svg'
 import TailwindCSS from './icons/icon-tailwindcss.svg'
+import Leaflet from './icons/icon-leaflet.svg'
 
 export default {
     name: 'Technologies',
@@ -42,6 +43,7 @@ export default {
         Laravel,
         TailwindCSS,
         Github,
+        Leaflet,
     },
 }
 </script>

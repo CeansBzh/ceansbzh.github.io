@@ -18,7 +18,9 @@
                     <div class="flex justify-between font-bold text-xl mb-2">
                         <div>
                             <p class="inline-block">{{ project.title }}</p>
-                            <p class="inline-block ml-1 text-sm font-extralight" v-if="project.completion">- {{ project.completion }}%</p>
+                            <p class="inline-block ml-1 text-sm font-extralight" v-if="project.completion">
+                                - {{ project.completion }}%
+                            </p>
                         </div>
                         <a
                             v-if="project.gitLink"
@@ -37,7 +39,7 @@
                                 /></svg
                         ></a>
                     </div>
-                    <p class="text-grey-darker text-base">
+                    <p class="text-justify text-base">
                         {{ project.shortDesc }}
                     </p>
                     <button
@@ -86,9 +88,9 @@ export default {
                     shortDesc:
                         "Site internet d'une communauté de jeu vidéo. Destiné à servir de multiples fonctions directement en lien avec le jeu.",
                     desc:
-                        "Rhiven est un projet initié par un groupe d'amis qui hébergent un serveur de jeu (Unturned). Nous souhaitions proposer la meilleure qualité de jeu grâce à des fonctionnalités innovantes. C'est dans le cadre de ces fonctionnalités qu'est né le site internet de Rhiven.",
+                        "Rhiven est le site d'un serveur de jeu. Le but est de proposer des fonctionnalités en lien direct avec le jeu. Il dispose de services basiques comme un blog, un forum, un système de gestion de compte. Il compte aussi certaines fonctionnalités plus poussées:\n- Une banque, avec gestions de plusieurs comptes bancaires (y compris comptes de groupes), possibilité de virements entre compte et changement de banque pour des avantages commes des taux plus faibles.\n- Un site immobilier avec une carte interactive des biens à vendre.",
                     completion: 90,
-                    skills: ['Laravel', 'Bootstrap'],
+                    skills: ['HTML5', 'CSS3', 'Laravel', 'Bootstrap', 'Javascript', 'Github'],
                     mainImageUrl: '/src/assets/rhiven-main.jpg',
                     mainImageAlt: "Capture d'écran de l'accueil du site Rhiven.fr",
                 },
@@ -97,9 +99,9 @@ export default {
                     shortDesc:
                         'Le site sur lequel vous vous trouvez actuellement. Sert à compléter mon CV avec des informations supplémentaires.',
                     desc:
-                        "J'ai voulu créer un portfolio dans le cadre de ma recherche d'alternance. C'est à mon avis un bon moyen de montrer ses compétences, et également le fait que l'on soit motivé à faire ce travail. J'ai voulu réaliser ce portfolio avec Vue.js car c'est un framework qui me tiens à coeur. Je l'avais vaguement exploré lors de mon projet de bac d'ISN en terminale, et depuis je ne l'avais pas réutilisé.",
+                        "Projet réalisé dans le cadre de ma recherche d'alternance. L'objectif est de proposer des informations complémentaires à celles de mon CV tout en démontrant mes compétences.\nCréé en utilisant l'outil de frontend Vite (en association avec le framework Vue). Concernant le style j'ai utilisé le framework TailwindCSS, un framework 'dans le vent' :).",
                     completion: 60,
-                    skills: ['Vue', 'TailwindCSS'],
+                    skills: ['HTML5', 'CSS3', 'Vue', 'TailwindCSS', 'npm', 'Github'],
                     gitLink: 'https://github.com/CeansBzh/CeansBzh.github.io',
                     gitName: 'CeansBzh.github.io',
                     mainImageUrl: '/src/assets/portfolio-main.jpg',
@@ -107,8 +109,25 @@ export default {
                 },
                 {
                     title: 'Estimateur de note du bac',
+                    shortDesc:
+                        "Mon projet d'ISN pour le bac. L'objectif est de pouvoir calculer sa note approximative du bac avec le contrôle continu.",
+                    desc:
+                        "Ce petit site comporte un formulaire dans lequel l'utilisateur rentre les informations de sa scolarité au bac, comme sa filière et sa spécialité. Puis il rentre les notes de ses bulletins trimestriel/semestriels, et quand toutes les informations sont renseignées la note approximative est affichées.",
+                    completion: 100,
+                    skills: ['HTML5', 'CSS3', 'Vue', 'Bootstrap'],
                     mainImageUrl: '/src/assets/note-bac-main.jpg',
                     mainImageAlt: "Capture d'écran d'une application de calcul de note du bac",
+                },
+                {
+                    title: 'Carte de mes voyages',
+                    shortDesc:
+                        "Un projet réalisé à l'étranger, lors de mon road-trip au Canada.",
+                    desc:
+                        "L'un de mes premiers projets web. Le but est d'avoir un souvenir de chacun de mes voyages et une vision globale sur les endroits que j'ai visité. \n J'ai donc créé cette carte du monde basique avec Leaflet, en Javascript donc, qui me permet de mettre des points sur les zones souhaitées.",
+                    completion: 100,
+                    skills: ['HTML5', 'CSS3', 'Javascript', 'Leaflet'],
+                    mainImageUrl: '/src/assets/carte-lieux-main.jpg',
+                    mainImageAlt: "Capture d'écran d'une carte interactive du monde",
                 },
             ],
         }
