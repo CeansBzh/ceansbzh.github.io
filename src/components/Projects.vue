@@ -88,7 +88,7 @@ export default {
                     shortDesc:
                         "Site internet d'une communauté de jeu vidéo. Destiné à servir de multiples fonctions directement en lien avec le jeu.",
                     desc:
-                        "Rhiven est le site d'un serveur de jeu. Le but est de proposer des fonctionnalités en lien direct avec le jeu. Il dispose de services basiques comme un blog, un forum, un système de gestion de compte. Il compte aussi certaines fonctionnalités plus poussées:\n- Une banque, avec gestions de plusieurs comptes bancaires (y compris comptes de groupes), possibilité de virements entre compte et changement de banque pour des avantages commes des taux plus faibles.\n- Un site immobilier avec une carte interactive des biens à vendre.",
+                        "Rhiven est le site d'un serveur de jeu. Le but est de proposer des fonctionnalités en lien direct avec le jeu. Il dispose de services basiques comme un blog, un forum, un système de gestion de compte. Il compte aussi certaines fonctionnalités plus poussées:\n- Une banque, avec gestion de plusieurs comptes bancaires (y compris comptes de groupe), possibilité de virements entre comptes et changement de banque pour des avantages comme des taux plus faibles.\n- Un site immobilier avec une carte interactive des biens à vendre.",
                     completion: 90,
                     skills: ['HTML5', 'CSS3', 'Laravel', 'Bootstrap', 'Javascript', 'Github'],
                     mainImageUrl: '/rhiven-main.jpg',
@@ -112,7 +112,7 @@ export default {
                     shortDesc:
                         "Mon projet d'ISN pour le bac. L'objectif est de pouvoir calculer sa note approximative du bac avec le contrôle continu.",
                     desc:
-                        "Ce petit site comporte un formulaire dans lequel l'utilisateur rentre les informations de sa scolarité au bac, comme sa filière et sa spécialité. Puis il rentre les notes de ses bulletins trimestriel/semestriels, et quand toutes les informations sont renseignées la note approximative est affichées.",
+                        "Ce petit site comporte un formulaire dans lequel l'utilisateur rentre les informations de sa scolarité au bac, comme sa filière et sa spécialité. Puis il rentre les notes de ses bulletins trimestriels/semestriels, et quand toutes les informations sont renseignées la note approximative est affichée.",
                     completion: 100,
                     skills: ['HTML5', 'CSS3', 'Vue', 'Bootstrap'],
                     mainImageUrl: '/note-bac-main.jpg',
@@ -120,7 +120,7 @@ export default {
                 },
                 {
                     title: 'Carte de mes voyages',
-                    shortDesc: "Un projet réalisé à l'étranger, lors de mon road-trip au Canada.",
+                    shortDesc: "Un projet de carte interactive réalisé à l'étranger, lors de mon road-trip au Canada. Créé avec Leaflet.",
                     desc:
                         "L'un de mes premiers projets web. Le but est d'avoir un souvenir de chacun de mes voyages et une vision globale sur les endroits que j'ai visité. \n J'ai donc créé cette carte du monde basique avec Leaflet, en Javascript donc, qui me permet de mettre des points sur les zones souhaitées.",
                     completion: 100,
