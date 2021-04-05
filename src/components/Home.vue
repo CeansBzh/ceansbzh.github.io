@@ -6,7 +6,7 @@
             <div
                 class="bg-gradient-to-b from-transparent via-transparent to-gray-100 dark:to-gray-900 bg-opacity-60 min-h-screen"
             >
-                <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto py-24 lg:my-0">
+                <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto pt-24 pb-10 lg:my-0">
                     <!--Main Col-->
                     <div
                         class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white dark:bg-gray-900 dark:text-gray-100 bg-opacity-75 mx-6 lg:mx-0"
@@ -139,7 +139,8 @@
                         />
                     </div>
 
-                    <DarkModeButton></DarkModeButton>
+                    <DarkModeButton />
+                    <ScrollDownIcon />
                 </div>
                 <div class="mr-2 text-right text-xs lg:text-sm text-gray-700 dark:text-gray-200 text-opacity-60">
                     Photo par
@@ -161,11 +162,13 @@
 import DarkModeButton from './TheDarkModeButton.vue'
 import SectionNav from './SectionNav.vue'
 import { directive } from 'vue-tippy'
+import ScrollDownIcon from './ScrollDownIcon.vue'
 
 export default {
     components: {
         DarkModeButton,
         SectionNav,
+        ScrollDownIcon,
     },
     directives: {
         tippy: directive,
