@@ -1,5 +1,5 @@
 <template>
-    <div class="px-2 pt-1 flex items-stretch">
+    <div class="px-2 pt-1 grid grid-cols-2 sm:grid-cols-3 md:flex gap-2 items-stretch">
         <TechnologyIconBase v-for="tech in techs" :key="tech" :techName="tech">
             <Component :is="tech" class="fill-current text-gray-200 dark:text-green-700"></Component>
         </TechnologyIconBase>
