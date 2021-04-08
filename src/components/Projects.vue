@@ -63,16 +63,6 @@ export default {
         ProjectsHighlighted,
         ProjectsModal,
     },
-    mounted: function () {
-        this.$nextTick(function () {
-            const id = 'section-nav'
-            const yOffset = -20
-            const element = document.getElementById(id)
-            const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset
-
-            window.scrollTo({ top: y, behavior: 'smooth' })
-        })
-    },
     methods: {
         openModal(project) {
             this.currentProject = project
