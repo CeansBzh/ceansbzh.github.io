@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elouan Briantais - Portfolio</title>
+  <meta name="description"
+    content="Portfolio de mes projets et de ma formation. J'ai commencé le développement web comme un hobby, je cherche à en faire mon métier.">
+  <script>
+    if (
+      localStorage.theme === 'dark' ||
+      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+<script type="module" crossorigin src="/assets/index.330d0f39.js"></script>
+  <link rel="modulepreload" href="/assets/vendor.db9cc3fc.js">
+  <link rel="stylesheet" href="/assets/index.68556d00.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  
+</body>
+
+</html>
