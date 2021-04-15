@@ -165,7 +165,9 @@
             </div>
         </div>
         <SectionNav id="section-nav"></SectionNav>
-        <router-view />
+        <div class="container mx-auto">
+            <router-view />
+        </div>
     </div>
 </template>
 
