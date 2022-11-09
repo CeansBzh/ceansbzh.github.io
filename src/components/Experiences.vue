@@ -1,26 +1,18 @@
 <template>
     <div
-        class="p-1 flex flex-wrap mt-5 justify-center divide-y divide-green-700 dark:divide-gray-400 mx-auto max-w-6xl"
-    >
-        <div
-            v-for="experience in experiences"
-            :key="experience.title"
-            class="py-4 px-4 grid grid-cols-1 sm:grid-cols-5 gap-4"
-        >
+        class="p-1 flex flex-wrap mt-5 justify-center divide-y divide-green-700 dark:divide-gray-400 mx-auto max-w-6xl">
+        <div v-for="experience in experiences" :key="experience.title"
+            class="py-4 px-4 grid grid-cols-1 sm:grid-cols-5 gap-4">
             <div class="col-span-2 sm:col-span-1">
-                <img
-                    class="h-24 rounded mx-auto"
-                    v-if="experience.mainImageUrl"
-                    :src="experience.mainImageUrl"
-                    :alt="experience.mainImageAlt"
-                />
+                <img class="h-24 rounded mx-auto" v-if="experience.mainImageUrl" :src="experience.mainImageUrl"
+                    :alt="experience.mainImageAlt" />
             </div>
             <div class="col-span-2 sm:col-span-4 dark:text-gray-100">
                 <h2 class="font-bold">
                     {{ experience.title }}
                 </h2>
                 <a class="hover:underline" :href="experience.companyUrl" target="_blank" rel="noopener noreferrer">{{
-                    experience.company
+                        experience.company
                 }}</a>
                 <p class="font-light">{{ experience.start }} - {{ experience.end }}</p>
                 <p class="mt-2 text-justify">
@@ -42,6 +34,17 @@ export default {
     data() {
         return {
             experiences: [
+                {
+                    title: 'Alternant développeur web Full-Stack',
+                    company: 'Neovote',
+                    companyUrl: 'https://www.neovote.com/',
+                    start: 'Septembre 2021',
+                    end: 'Août 2022',
+                    desc:
+                        "J'ai réalisé ma deuxième année d'IUT en alternance au sein de l'entreprise Neovote, entreprise spécialisée dans le vote électronique. J'ai pu participer à la conception et au développement de modules applicatifs notamment dédiés à la gestion de l'entreprise.",
+                    mainImageUrl: '/neovote.jpg',
+                    mainImageAlt: 'Logo entreprise de vote électronique Neovote',
+                },
                 {
                     title: 'Chef de projet - Projet Citoyen IUT de Vannes',
                     company: 'APF France Handicap',
@@ -81,4 +84,5 @@ export default {
 </script>
 
 <style>
+
 </style>
