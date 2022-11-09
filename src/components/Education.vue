@@ -1,5 +1,5 @@
 <template>
-    <div class="w-100">
+    <div class="w-screen mx-auto sm:w-[80vw]">
         <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50">
             <!-- fade in of the timeline bar -->
             <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
