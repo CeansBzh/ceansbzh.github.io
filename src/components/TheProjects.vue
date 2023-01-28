@@ -19,8 +19,8 @@ import ProjectItem from "./ProjectItem.vue";
               <img
                 alt="Image du projet Akipaj"
                 src="@/assets/projects/akipaj.jpg"
-                width="560"
-                height="498"
+                width="448"
+                height="398"
                 class="w-full max-w-xs select-none rounded-2xl sm:w-56 md:w-auto md:max-w-xs lg:max-w-sm xl:max-w-md"
               />
             </template>
@@ -33,8 +33,8 @@ import ProjectItem from "./ProjectItem.vue";
               <img
                 alt="Image du projet Rhiven"
                 src="@/assets/projects/rhiven.jpg"
-                width="560"
-                height="498"
+                width="448"
+                height="398"
                 class="w-full max-w-xs select-none rounded-2xl sm:w-56 md:w-auto md:max-w-xs lg:max-w-sm xl:max-w-md"
               />
             </template>
