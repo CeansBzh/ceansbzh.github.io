@@ -104,7 +104,7 @@ function copyToClipboard(string) {
         </div>
       </button>
       <div class="ml-3 hidden text-gray-200 group-hover:block">
-        <p class="text-lg font-semibold">ebriantais@orange.fr</p>
+        <p class="text-lg font-medium">ebriantais@orange.fr</p>
         <p class="text-xs" ref="copyText">Cliquer pour copier</p>
       </div>
     </div>

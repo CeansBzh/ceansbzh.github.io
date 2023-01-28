@@ -10,7 +10,9 @@ import TheProjects from "../components/TheProjects.vue";
     >
       <p class="mb-3 text-2xl text-gray-400">Bonjour 👋</p>
       <p class="text-2xl text-gray-400">Je m'appelle</p>
-      <h1 class="mb-3 text-4xl text-gray-100 xs:text-5xl">Elouan Briantais</h1>
+      <h1 class="mb-3 font-sans text-4xl text-gray-100 xs:text-5xl">
+        Elouan Briantais
+      </h1>
       <p class="text-2xl text-gray-400">et je suis</p>
       <p class="mb-8 text-2xl text-gray-100 xs:text-3xl">
         Développeur web back-end
