@@ -1,35 +1,18 @@
-# ceansbzh.github.io
+Seconde version de mon portfolio.
 
-This template should help get you started developing with Vue 3 in Vite.
+## Technos du projet
 
-## Recommended IDE Setup
+[Vue3](https://vuejs.org/)
+[Vite](https://vitejs.dev/)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Polices
 
-## Customize configuration
+Les balises de titre sont en [Fira Sans](https://mozilla.github.io/Fira/).
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Le texte est en [Unbounded](https://unbounded.polkadot.network/).
 
-## Project Setup
+Les deux polices sont distribuées via [Google Fonts](https://fonts.google.com/).
 
-```sh
-npm install
-```
+## Hébergement
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Le site est hébergé sur [GitHub Pages](https://github.com/CeansBzh/ceansbzh.github.io/deployments/activity_log?environment=github-pages).
