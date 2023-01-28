@@ -5,12 +5,12 @@ import ProjectItem from "./ProjectItem.vue";
 <template>
   <section class="mb-52">
     <div class="p-5">
-      <div class="mx-auto max-w-2xl">
+      <div class="mx-auto mb-16 max-w-2xl">
         <h1 class="mb-8 font-bold uppercase text-neutral-300">Projets</h1>
       </div>
 
       <ul
-        class="mx-auto max-w-6xl [&>li:not(:last-child)]:mb-16 [&>li:nth-child(even)_article]:sm:flex-row-reverse [&>li:nth-child(even)_article]:sm:space-x-reverse [&>li:nth-child(odd)_article]:sm:flex-row [&>li:nth-child(odd)_article>h2]:sm:translate-x-20 [&>li:nth-child(even)_article>h2]:sm:-translate-x-20 [&>li:nth-child(even)_article:hover>h2]:sm:translate-x-0 [&>li:nth-child(odd)_article:hover>h2]:sm:translate-x-0 [&>li_article]:sm:space-x-5"
+        class="mx-auto max-w-6xl [&>li:not(:last-child)]:mb-20 [&>li:nth-child(even)_article]:sm:flex-row-reverse [&>li:nth-child(even)_article]:sm:space-x-reverse [&>li:nth-child(odd)_article]:sm:flex-row [&>li:nth-child(odd)_article>h2]:sm:translate-x-20 [&>li:nth-child(even)_article>h2]:sm:-translate-x-20 [&>li:nth-child(even)_article:hover>h2]:sm:translate-x-0 [&>li:nth-child(odd)_article:hover>h2]:sm:translate-x-0 [&>li_article]:sm:space-x-5"
       >
         <li>
           <ProjectItem route="https://akipaj.fr" color="after:bg-[#0ea5e9]">
