@@ -6,7 +6,9 @@ import ProjectItem from "./ProjectItem.vue";
   <section class="mb-52">
     <div class="p-5">
       <div class="mx-auto mb-16 max-w-2xl">
-        <h1 class="mb-8 font-bold uppercase text-neutral-300">Projets</h1>
+        <h1 id="projects" class="mb-8 font-bold uppercase text-neutral-300">
+          Projets
+        </h1>
       </div>
 
       <ul
