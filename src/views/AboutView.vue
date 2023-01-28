@@ -5,7 +5,7 @@ import EducationItem from "../components/EducationItem.vue";
 <template>
   <main class="pb-40">
     <section
-      class="mx-auto mt-12 mb-24 max-w-xl p-5 sm:my-24 md:p-0 lg:my-40 xl:my-48 2xl:my-56 2xl:max-w-2xl"
+      class="mx-auto max-w-xl px-5 sm:px-0 sm:py-20 lg:py-24 xl:py-28 2xl:max-w-2xl 2xl:py-52"
     >
       <div class="mx-auto mb-10 max-w-2xl">
         <h1 class="mb-8 font-bold uppercase text-neutral-400">Sommaire</h1>
@@ -17,27 +17,36 @@ import EducationItem from "../components/EducationItem.vue";
             <a
               href="#whoami"
               class="transition-colors duration-300 hover:text-white"
-              >Qui suis-je</a
             >
+              Qui suis-je
+            </a>
           </li>
           <li>
             <a
               href="#education"
               class="transition-colors duration-300 hover:text-white"
-              >Formation</a
             >
+              Formation
+            </a>
+          </li>
+          <li>
+            <a
+              href="#experience"
+              class="transition-colors duration-300 hover:text-white"
+            >
+              Expérience pro
+            </a>
           </li>
         </ul>
       </nav>
     </section>
 
     <section
-      class="mx-auto mt-12 mb-24 max-w-xl p-5 sm:my-24 md:p-0 lg:my-40 xl:my-48 2xl:my-56 2xl:max-w-2xl"
+      id="whoami"
+      class="mx-auto max-w-xl px-5 sm:px-0 sm:py-20 lg:py-24 xl:py-28 2xl:max-w-2xl 2xl:py-44"
     >
       <div class="mb-10">
-        <h1 id="whoami" class="mb-8 font-bold uppercase text-neutral-400">
-          Qui suis-je
-        </h1>
+        <h1 class="mb-8 font-bold uppercase text-neutral-400">Qui suis-je</h1>
       </div>
 
       <div
@@ -61,12 +70,11 @@ import EducationItem from "../components/EducationItem.vue";
     </section>
 
     <section
-      class="mx-auto mt-12 mb-24 max-w-xl p-5 sm:my-24 md:p-0 lg:my-40 xl:my-48 2xl:my-56 2xl:max-w-2xl"
+      id="education"
+      class="mx-auto max-w-xl px-5 sm:px-0 sm:py-20 lg:py-24 xl:py-28 2xl:max-w-2xl 2xl:py-44"
     >
       <div class="mb-10">
-        <h1 id="education" class="mb-8 font-bold uppercase text-neutral-400">
-          Formation
-        </h1>
+        <h1 class="mb-8 font-bold uppercase text-neutral-400">Formation</h1>
       </div>
 
       <ol>
@@ -103,6 +111,27 @@ import EducationItem from "../components/EducationItem.vue";
               </ul>
             </template>
           </EducationItem>
+        </li>
+      </ol>
+    </section>
+
+    <section
+      id="experience"
+      class="mx-auto max-w-xl px-5 sm:px-0 sm:py-20 lg:py-24 xl:py-28 2xl:max-w-2xl 2xl:py-44"
+    >
+      <div class="mb-10">
+        <h1 class="mb-8 font-bold uppercase text-neutral-400">
+          Expérience professionnelle
+        </h1>
+      </div>
+
+      <ol>
+        <li class="mb-14">
+          <p class="mb-1 text-lg">Neovote</p>
+          <p class="mb-2 text-base text-neutral-300">
+            Alternant développeur PHP
+          </p>
+          <time class="text-neutral-400">Sept 2021 - Août 2022</time>
         </li>
       </ol>
     </section>
