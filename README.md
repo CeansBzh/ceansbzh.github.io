@@ -16,3 +16,7 @@ Les deux polices sont distribuées via [Google Fonts](https://fonts.google.com/)
 ## Hébergement
 
 Le site est hébergé sur [GitHub Pages](https://github.com/CeansBzh/ceansbzh.github.io/deployments/activity_log?environment=github-pages).
+
+## Inspiration
+
+J'ai été largement inspiré par le [portfolio de Michael McKeever](https://mckvr.com/).
