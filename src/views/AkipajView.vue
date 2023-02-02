@@ -51,8 +51,10 @@
         </div>
       </div>
 
-      <section class="mx-auto my-14 flex max-w-5xl">
-        <div class="grow p-10 text-justify text-base text-neutral-300">
+      <section
+        class="mx-4 my-14 flex max-w-5xl flex-col sm:mx-auto sm:flex-row"
+      >
+        <div class="grow p-3 text-justify text-base text-neutral-300 sm:p-10">
           <p class="mb-3">
             Akipaj est une association de voile organisant régulièrement des
             sorties de plusieurs jours. Je suis chargé de développer une
@@ -65,7 +67,7 @@
             est réalisé avec Tailwind CSS.
           </p>
         </div>
-        <div class="border-l border-neutral-400 p-5">
+        <div class="border-t border-neutral-400 p-5 sm:border-t-0 sm:border-l">
           <div class="flex min-w-[15rem] flex-col space-y-3">
             <h3 class="text-base">Stack technique</h3>
 
