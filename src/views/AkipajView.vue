@@ -1,54 +1,53 @@
 <template>
   <main>
     <article>
-      <div class="overflow-hidden">
-        <header
-          class="relative flex h-1 min-h-[40vh] flex-col justify-center bg-contain bg-right bg-no-repeat text-neutral-200"
+      <header
+        class="relative flex h-1 min-h-[40vh] flex-col justify-center overflow-hidden bg-neutral-800/50 bg-contain bg-right bg-no-repeat text-neutral-200"
+      >
+        <div
+          class="mx-auto -mt-6 flex h-full w-full max-w-5xl items-center px-6 sm:-mt-12 md:-mt-24 lg:px-10 xl:px-0 2xl:max-w-screen-xl"
         >
-          <div
-            class="mx-auto -mt-6 flex h-full w-full max-w-5xl items-center px-6 sm:-mt-12 md:-mt-24 lg:px-10 xl:px-0 2xl:max-w-screen-xl"
-          >
-            <div class="w-full py-24 sm:w-3/4 lg:w-1/2">
-              <h3
-                class="relative z-40 mb-1 font-sans font-medium opacity-75 sm:mb-2 sm:text-xl"
-              >
-                Akipaj
-              </h3>
-              <h1
-                class="relative z-20 grow text-xl font-light leading-tight xs:text-2xl sm:text-3xl lg:text-4xl"
-              >
-                Partage de photos entre les membres d'une association
-              </h1>
-            </div>
-            <div
-              class="absolute bottom-0 right-0 -z-10 h-1/2 w-full p-3 opacity-50 md:w-2/3 md:opacity-75 lg:opacity-90 xl:w-1/2"
+          <div class="w-full py-24 sm:w-3/4 lg:w-1/2">
+            <h3
+              class="relative z-40 mb-1 font-sans font-medium opacity-75 sm:mb-2 sm:text-xl"
             >
-              <img
-                src="@/assets/projects/akipaj/homepage.png"
-                alt="Image du projet Akipaj"
-              />
-            </div>
+              Akipaj
+            </h3>
+            <h1
+              class="relative z-20 grow text-xl font-light leading-tight xs:text-2xl sm:text-3xl lg:text-4xl"
+            >
+              Partage de photos entre les membres de l'association
+            </h1>
           </div>
-        </header>
-
-        <div class="px-4 sm:px-6 xl:px-0">
-          <aside
-            class="flex-no-wrap scrolling-touch relative z-10 mx-auto flex max-w-6xl flex-row overflow-x-auto bg-neutral-100 py-6 text-neutral-700 xs:text-lg 2xl:max-w-screen-xl"
+          <div
+            class="absolute bottom-0 right-0 h-1/2 w-full p-3 opacity-50 md:w-2/3 md:opacity-75 lg:opacity-90 xl:w-1/2"
           >
-            <div class="w-auto flex-none px-6 md:flex-auto">
-              <h3 class="mb-1 font-sans font-medium">Plateforme</h3>
-              <h4 class="font-sans opacity-75">Web</h4>
-            </div>
-            <div class="w-auto flex-none px-6 md:flex-auto">
-              <h3 class="mb-1 font-sans font-medium">Rôle</h3>
-              <h4 class="font-sans opacity-75">Développeur Fullstack</h4>
-            </div>
-            <div class="w-auto flex-none px-6 md:flex-auto">
-              <h3 class="mb-1 font-sans font-medium">Année</h3>
-              <h4 class="font-sans opacity-75">2022</h4>
-            </div>
-          </aside>
+            <img
+              src="@/assets/projects/akipaj/homepage.png"
+              alt="Image du projet Akipaj"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
         </div>
+      </header>
+
+      <div class="px-4 sm:px-6 xl:px-0">
+        <aside
+          class="relative z-10 mx-auto flex w-full max-w-6xl flex-row flex-nowrap overflow-x-auto bg-neutral-100 py-6 text-neutral-700 xs:text-lg 2xl:max-w-screen-xl"
+        >
+          <div class="w-auto flex-none px-6 md:flex-auto">
+            <h3 class="mb-1 font-sans font-medium">Plateforme</h3>
+            <h4 class="font-sans opacity-75">Web</h4>
+          </div>
+          <div class="w-auto flex-none px-6 md:flex-auto">
+            <h3 class="mb-1 font-sans font-medium">Rôle</h3>
+            <h4 class="font-sans opacity-75">Développeur Fullstack</h4>
+          </div>
+          <div class="w-auto flex-none px-6 md:flex-auto">
+            <h3 class="mb-1 font-sans font-medium">Année</h3>
+            <h4 class="font-sans opacity-75">2022</h4>
+          </div>
+        </aside>
       </div>
 
       <section class="mx-auto my-14 flex max-w-5xl">
