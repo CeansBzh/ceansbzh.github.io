@@ -20,7 +20,7 @@
             </h1>
           </div>
           <div
-            class="absolute bottom-0 right-0 h-1/2 w-full p-3 opacity-50 md:w-2/3 md:opacity-75 lg:opacity-90 xl:w-1/2"
+            class="absolute bottom-0 right-0 h-1/2 w-full p-3 opacity-50 sm:bottom-10 md:bottom-16 md:w-2/3 md:opacity-75 lg:opacity-90 xl:w-1/2"
           >
             <img
               src="@/assets/projects/akipaj/homepage.png"
@@ -33,25 +33,29 @@
 
       <div class="px-4 sm:px-6 xl:px-0">
         <aside
-          class="relative z-10 mx-auto flex w-full max-w-6xl flex-row flex-nowrap overflow-x-auto bg-neutral-100 py-6 text-neutral-700 xs:text-lg 2xl:max-w-screen-xl"
+          class="relative z-10 mx-auto flex w-full max-w-6xl flex-row flex-nowrap justify-around overflow-x-auto bg-neutral-100 py-8 text-neutral-700 xs:text-lg 2xl:max-w-screen-xl"
         >
-          <div class="w-auto flex-none px-6 md:flex-auto">
+          <div class="flex-none px-6">
             <h3 class="mb-1 font-sans font-medium">Plateforme</h3>
             <h4 class="font-sans opacity-75">Web</h4>
           </div>
-          <div class="w-auto flex-none px-6 md:flex-auto">
+          <div class="flex-none px-6">
             <h3 class="mb-1 font-sans font-medium">Rôle</h3>
             <h4 class="font-sans opacity-75">Développeur Fullstack</h4>
           </div>
-          <div class="w-auto flex-none px-6 md:flex-auto">
+          <div class="flex-none px-6">
             <h3 class="mb-1 font-sans font-medium">Année</h3>
             <h4 class="font-sans opacity-75">2022</h4>
           </div>
         </aside>
       </div>
 
-      <section class="mx-auto my-14 flex max-w-5xl">
-        <div class="grow p-10 text-justify text-base text-neutral-300">
+      <section
+        class="mx-4 my-14 flex max-w-5xl flex-col sm:mx-auto sm:flex-row"
+      >
+        <div
+          class="grow py-5 px-3 text-justify text-base text-neutral-300 sm:px-10"
+        >
           <p class="mb-3">
             Akipaj est une association de voile organisant régulièrement des
             sorties de plusieurs jours. Je suis chargé de développer une
@@ -64,7 +68,7 @@
             est réalisé avec Tailwind CSS.
           </p>
         </div>
-        <div class="border-l border-neutral-400 p-5">
+        <div class="border-t border-neutral-400 p-5 sm:border-t-0 sm:border-l">
           <div class="flex min-w-[15rem] flex-col space-y-3">
             <h3 class="text-base">Stack technique</h3>
 
