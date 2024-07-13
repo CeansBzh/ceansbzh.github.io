@@ -24,7 +24,7 @@
           >
             <img
               src="@/assets/projects/akipaj/homepage.png"
-              alt="Image du projet Akipaj"
+              alt="Capture d'écran du projet Akipaj"
               class="rounded-lg shadow-lg"
             />
           </div>

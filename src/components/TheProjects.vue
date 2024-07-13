@@ -19,7 +19,7 @@ import ProjectItem from './ProjectItem.vue';
             <template #name>Akipaj</template>
             <template #image>
               <img
-                alt="Image du projet Akipaj"
+                alt="Capture d'écran du site Akipaj"
                 src="@/assets/projects/akipaj/project-item.jpg"
                 width="448"
                 height="398"
@@ -33,7 +33,7 @@ import ProjectItem from './ProjectItem.vue';
             <template #name>Rhiven</template>
             <template #image>
               <img
-                alt="Image du projet Rhiven"
+                alt="Capture d'écran du site Rhiven"
                 src="@/assets/projects/rhiven/project-item.jpg"
                 width="448"
                 height="398"

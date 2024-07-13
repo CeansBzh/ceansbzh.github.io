@@ -55,20 +55,29 @@ import EducationItem from '../components/EducationItem.vue';
       >
         <p class="mb-3 text-lg text-neutral-200">
           Je suis Elouan Briantais, développeur web chez
-          <AppLink to="https://www.voyelle.fr/" aria-label="Voir le projet">
-            Voyelle
-          </AppLink>
-          et étudiant en informatique à l'
-          <a href="https://istic.univ-rennes.fr/" target="_blank">ISTIC</a>
+          <AppLink
+            to="https://www.voyelle.fr/"
+            class="underline underline-offset-2 decoration-2"
+            aria-label="Voir le projet"
+            >Voyelle</AppLink
+          >
+          et étudiant en informatique à l'<AppLink
+            to="https://istic.univ-rennes.fr/"
+            class="underline underline-offset-2 decoration-2"
+            aria-label="Voir le projet"
+            >ISTIC</AppLink
+          >
           .
         </p>
         <p>
-          Ma spécialité est le développement back-end, mais comme vous pouvez le
-          voir je suis aussi capable de développer des interfaces web.
+          Ma spécialité est le développement back-end, mais j'aime aussi créer
+          des interfaces web modernes et visuellement intéressantes.
         </p>
         <p>
           Mes
-          <router-link to="/#projects" class="underline">projets</router-link>
+          <AppLink to="/#projects" class="underline underline-offset-2"
+            >projets</AppLink
+          >
           personnels sont ma force. C'est grâce à eux que j'ai choisi ma voie et
           qu'aujourd'hui je me professionnalise dans le développement web.
         </p>
@@ -84,6 +93,23 @@ import EducationItem from '../components/EducationItem.vue';
       </div>
 
       <ol>
+        <li class="border-l border-neutral-600 pb-10">
+          <EducationItem>
+            <template #time>2023 - 2025</template>
+            <template #place>ISTIC, Université de Rennes</template>
+            <template #title>Master informatique</template>
+            <template #body>
+              Spécialité Ingénierie Logicielle pour m'orienter vers le
+              développement d'application web complexes.
+              <ul class="ml-3 mt-2 list-inside list-disc">
+                <li>Programmation réseau</li>
+                <li>Conception orientée utilisateur</li>
+                <li>Architecture des logiciels</li>
+                <li>...</li>
+              </ul>
+            </template>
+          </EducationItem>
+        </li>
         <li class="border-l border-neutral-600 pb-10">
           <EducationItem>
             <template #time>2022 - 2023</template>
@@ -111,7 +137,7 @@ import EducationItem from '../components/EducationItem.vue';
               Début des études supérieures en informatique.
               <ul class="ml-3 mt-2 list-inside list-disc">
                 <li>Théorie des langages</li>
-                <li>Bases de donnée</li>
+                <li>Bases de données</li>
                 <li>Maths discrètes</li>
                 <li>...</li>
               </ul>
@@ -133,7 +159,24 @@ import EducationItem from '../components/EducationItem.vue';
 
       <ol>
         <li class="mb-14">
-          <p class="mb-1 text-lg">Neovote</p>
+          <AppLink
+            to="https://www.voyelle.fr/"
+            class="block mb-1 text-lg underline underline-offset-2"
+            aria-label="Voir le projet"
+            >Voyelle</AppLink
+          >
+          <p class="mb-2 text-base text-neutral-300">
+            Alternant développeur Web
+          </p>
+          <time class="text-neutral-400">Mai 2023 (en cours)</time>
+        </li>
+        <li class="mb-14">
+          <AppLink
+            to="https://www.neovote.com/"
+            class="block mb-1 text-lg underline underline-offset-2"
+            aria-label="Voir le projet"
+            >Neovote</AppLink
+          >
           <p class="mb-2 text-base text-neutral-300">
             Alternant développeur PHP
           </p>

@@ -3,16 +3,21 @@ import { ref } from 'vue';
 
 const copyText = ref(null);
 let timer = null;
-function copyToClipboard(string) {
+
+const copyToClipboard = string => {
   navigator.clipboard.writeText(string).then(function () {
     copyText.value.innerText = 'Copiée !';
-    if (timer !== null) clearTimeout(timer);
+
+    if (timer !== null) {
+      clearTimeout(timer);
+    }
+
     timer = setTimeout(
       () => (copyText.value.innerText = 'Cliquer pour copier'),
       5000
     );
   });
-}
+};
 </script>
 
 <template>
