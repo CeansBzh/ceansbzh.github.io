@@ -1,14 +1,14 @@
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue';
 
 const copyText = ref(null);
 let timer = null;
 function copyToClipboard(string) {
   navigator.clipboard.writeText(string).then(function () {
-    copyText.value.innerText = "Copiée !";
+    copyText.value.innerText = 'Copiée !';
     if (timer !== null) clearTimeout(timer);
     timer = setTimeout(
-      () => (copyText.value.innerText = "Cliquer pour copier"),
+      () => (copyText.value.innerText = 'Cliquer pour copier'),
       5000
     );
   });
@@ -61,14 +61,14 @@ function copyToClipboard(string) {
     </div>
     <div
       class="group flex w-60 flex-row items-center xs:ml-5"
-      v-on:click="copyToClipboard('ebriantais@orange.fr')"
+      @click="copyToClipboard('ebriantais@orange.fr')"
     >
       <button
         type="button"
         aria-label="Copier mon adresse mail dans le presse-papier"
         class="rounded-full bg-neutral-200 p-2 text-neutral-900 shadow-md shadow-black transition ease-out hover:bg-[#ffc72c] hover:text-neutral-200 hover:shadow-[0_5px_15px_3px] hover:shadow-neutral-200/60"
       >
-        <div class="relative h-8 w-8">
+        <div class="relative size-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="presentation"
@@ -105,7 +105,7 @@ function copyToClipboard(string) {
       </button>
       <div class="ml-3 hidden text-gray-200 group-hover:block">
         <p class="text-lg font-medium">ebriantais@orange.fr</p>
-        <p class="text-xs" ref="copyText">Cliquer pour copier</p>
+        <p ref="copyText" class="text-xs">Cliquer pour copier</p>
       </div>
     </div>
   </div>

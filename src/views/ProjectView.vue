@@ -10,14 +10,14 @@ Corps
 - Découpage du corps en sections par fonctionnalité, avec des screens pour chaque section (inspi : https://radity.com/en/case-studies/zimmerstund/) -->
 
 <script setup>
-import { useRoute } from "vue-router";
+import { useRoute } from 'vue-router';
 
 const route = useRoute();
-let slug = route.params.slug;
+const slug = route.params.slug;
 </script>
 
 <template>
-  <div class="project-view">
+  <div>
     <h1>{{ slug }}</h1>
   </div>
 </template>

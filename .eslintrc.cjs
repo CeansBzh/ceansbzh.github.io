@@ -1,19 +1,45 @@
 /* eslint-env node */
-require("@rushstack/eslint-patch/modern-module-resolution");
+require('@rushstack/eslint-patch/modern-module-resolution');
 
 module.exports = {
   root: true,
-  plugins: ["tailwindcss"],
+  plugins: ['simple-import-sort'],
   extends: [
-    "plugin:vue/vue3-essential",
-    "eslint:recommended",
-    "@vue/eslint-config-prettier",
-    "plugin:tailwindcss/recommended",
+    'eslint:recommended',
+    'plugin:vue/vue3-recommended',
+    'plugin:jsx-a11y/recommended',
+    'plugin:tailwindcss/recommended',
+    '@vue/eslint-config-prettier'
   ],
   parserOptions: {
-    ecmaVersion: "latest",
+    sourceType: 'module',
+    ecmaVersion: 'latest'
   },
   rules: {
-    "tailwindcss/no-custom-classname": "off", // override recommended rule
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'vue/multi-word-component-names': 'off',
+    'no-undef': 'off',
+    'prettier/prettier': ['error', { semi: true }],
+    'no-restricted-imports': [
+      'error',
+      {
+        patterns: ['@/features/*/*']
+      }
+    ],
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+    'tailwindcss/no-custom-classname': [
+      'warn',
+      {
+        cssFiles: ['resources/css/app.css']
+      }
+    ]
   },
+  overrides: [
+    {
+      files: ['*.vue'],
+      parser: 'vue-eslint-parser'
+    }
+  ]
 };

@@ -2,6 +2,7 @@
   "name": "ceansbzh.github.io",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,21 +13,25 @@
   },
   "dependencies": {
     "vue": "^3.2.45",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "eslint-plugin-jsx-a11y": "^6.8.0"
   },
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.1.4",
-    "@vitejs/plugin-vue": "^4.0.0",
-    "@vue/eslint-config-prettier": "^7.0.0",
+    "@rushstack/eslint-patch": "^1.10.1",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vue/eslint-config-prettier": "^9.0.0",
     "autoprefixer": "^10.4.13",
-    "eslint": "^8.32.0",
-    "eslint-plugin-tailwindcss": "^3.8.2",
-    "eslint-plugin-vue": "^9.3.0",
-    "gh-pages": "^3.0.0",
-    "postcss": "^8.4.21",
-    "prettier": "^2.8.3",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-simple-import-sort": "^12.0.0",
+    "eslint-plugin-tailwindcss": "^3.15.1",
+    "eslint-plugin-vue": "^9.24.0",
+    "gh-pages": "^6.1.1",
+    "postcss": "^8.4.31",
+    "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.2.1",
     "tailwindcss": "^3.2.4",
-    "vite": "^4.0.5"
+    "vite": "^5.0",
+    "vue-eslint-parser": "^9.4.2"
   }
 }

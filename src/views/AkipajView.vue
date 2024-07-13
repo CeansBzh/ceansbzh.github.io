@@ -5,7 +5,7 @@
         class="relative flex h-1 min-h-[40vh] flex-col justify-center overflow-hidden bg-neutral-800/50 bg-contain bg-right bg-no-repeat text-neutral-200"
       >
         <div
-          class="mx-auto -mt-6 flex h-full w-full max-w-5xl items-center px-6 sm:-mt-12 md:-mt-24 lg:px-10 xl:px-0 2xl:max-w-screen-xl"
+          class="mx-auto -mt-6 flex size-full max-w-5xl items-center px-6 sm:-mt-12 md:-mt-24 lg:px-10 xl:px-0 2xl:max-w-screen-xl"
         >
           <div class="w-full py-24 sm:w-3/4 lg:w-1/2">
             <h3
@@ -54,7 +54,7 @@
         class="mx-4 my-14 flex max-w-5xl flex-col sm:mx-auto sm:flex-row"
       >
         <div
-          class="grow py-5 px-3 text-justify text-base text-neutral-300 sm:px-10"
+          class="grow px-3 py-5 text-justify text-base text-neutral-300 sm:px-10"
         >
           <p class="mb-3">
             Akipaj est une association de voile organisant régulièrement des
@@ -68,8 +68,8 @@
             est réalisé avec Tailwind CSS.
           </p>
         </div>
-        <div class="border-t border-neutral-400 p-5 sm:border-t-0 sm:border-l">
-          <div class="flex min-w-[15rem] flex-col space-y-3">
+        <div class="border-t border-neutral-400 p-5 sm:border-l sm:border-t-0">
+          <div class="flex min-w-60 flex-col space-y-3">
             <h3 class="text-base">Stack technique</h3>
 
             <div class="border-b border-neutral-400 p-3">

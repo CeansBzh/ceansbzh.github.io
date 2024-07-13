@@ -1,12 +1,15 @@
 <script setup>
-import AppLink from "./AppLink.vue";
+import AppLink from './AppLink.vue';
 
 defineProps({
   route: {
     type: String,
-    default: "#",
+    default: '#'
   },
-  color: String,
+  color: {
+    type: String,
+    default: 'text-neutral-300'
+  }
 });
 </script>
 

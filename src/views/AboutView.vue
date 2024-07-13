@@ -1,5 +1,6 @@
 <script setup>
-import EducationItem from "../components/EducationItem.vue";
+import AppLink from '../components/AppLink.vue';
+import EducationItem from '../components/EducationItem.vue';
 </script>
 
 <template>
@@ -53,8 +54,13 @@ import EducationItem from "../components/EducationItem.vue";
         class="flex flex-col space-y-3 text-justify text-base leading-loose tracking-wide text-neutral-300"
       >
         <p class="mb-3 text-lg text-neutral-200">
-          Je suis Elouan Briantais, étudiant à l'ISTIC à Rennes, et développeur
-          web sur mon temps libre.
+          Je suis Elouan Briantais, développeur web chez
+          <AppLink to="https://www.voyelle.fr/" aria-label="Voir le projet">
+            Voyelle
+          </AppLink>
+          et étudiant en informatique à l'
+          <a href="https://istic.univ-rennes.fr/" target="_blank">ISTIC</a>
+          .
         </p>
         <p>
           Ma spécialité est le développement back-end, mais comme vous pouvez le
