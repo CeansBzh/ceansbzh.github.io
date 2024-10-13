@@ -20,6 +20,11 @@ const router = createRouter({
       path: '/projets/akipaj',
       name: 'akipaj',
       component: () => import('../views/AkipajView.vue')
+    },
+    {
+      path: '/projets/kairos',
+      name: 'kairos',
+      component: () => import('../views/KairosView.vue')
     }
   ]
 });

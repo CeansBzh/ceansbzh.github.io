@@ -57,13 +57,13 @@ import EducationItem from '../components/EducationItem.vue';
           Je suis Elouan Briantais, développeur web chez
           <AppLink
             to="https://www.voyelle.fr/"
-            class="underline underline-offset-2 decoration-2"
+            class="underline decoration-2 underline-offset-2"
             aria-label="Voir le projet"
             >Voyelle</AppLink
           >
           et étudiant en informatique à l'<AppLink
             to="https://istic.univ-rennes.fr/"
-            class="underline underline-offset-2 decoration-2"
+            class="underline decoration-2 underline-offset-2"
             aria-label="Voir le projet"
             >ISTIC</AppLink
           >
@@ -161,7 +161,7 @@ import EducationItem from '../components/EducationItem.vue';
         <li class="mb-14">
           <AppLink
             to="https://www.voyelle.fr/"
-            class="block mb-1 text-lg underline underline-offset-2"
+            class="mb-1 block text-lg underline underline-offset-2"
             aria-label="Voir le projet"
             >Voyelle</AppLink
           >
@@ -173,7 +173,7 @@ import EducationItem from '../components/EducationItem.vue';
         <li class="mb-14">
           <AppLink
             to="https://www.neovote.com/"
-            class="block mb-1 text-lg underline underline-offset-2"
+            class="mb-1 block text-lg underline underline-offset-2"
             aria-label="Voir le projet"
             >Neovote</AppLink
           >
