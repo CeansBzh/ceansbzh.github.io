@@ -1,6 +1,6 @@
 <script setup>
 const notes = import.meta.glob('../assets/notes/*.md');
-const noteNames = Object.keys(notes).map(path => path.slice(16));
+const noteNames = Object.keys(notes).map(path => path.slice(16, -3));
 </script>
 
 <template>

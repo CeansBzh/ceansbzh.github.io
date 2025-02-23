@@ -13,7 +13,9 @@ const props = defineProps({
 const markdown = ref('');
 
 onMounted(async () => {
-  markdown.value = (await import(`../assets/notes/${props.note}?raw`)).default;
+  markdown.value = (
+    await import(`../assets/notes/${props.note}.md?raw`)
+  ).default;
 });
 </script>
 
