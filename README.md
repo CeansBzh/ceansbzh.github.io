@@ -11,7 +11,7 @@ Les balises de titre sont en [Fira Sans](https://mozilla.github.io/Fira/).
 
 Le texte est en [Unbounded](https://unbounded.polkadot.network/).
 
-Les deux polices sont distribuées via [Google Fonts](https://fonts.google.com/).
+Les deux polices sont distribuées via [Bunny Fonts](https://fonts.bunny.net).
 
 ## Hébergement
 
