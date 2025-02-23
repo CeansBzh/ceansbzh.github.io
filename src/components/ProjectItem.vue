@@ -23,7 +23,7 @@ defineProps({
     >
       <AppLink
         :to="route"
-        class="text-right text-[5rem] font-bold text-[#808080] transition duration-500 group-hover:text-neutral-100 sm:text-[6rem] xl:text-[10rem]"
+        class="text-right text-[5rem] font-black text-[#808080] transition duration-500 group-hover:text-neutral-100 sm:text-[6rem] xl:text-[10rem]"
         aria-label="Voir le projet"
       >
         <slot name="name"></slot>

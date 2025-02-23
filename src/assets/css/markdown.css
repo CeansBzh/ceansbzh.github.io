@@ -1,0 +1,43 @@
+#markdown h1 {
+  @apply text-3xl font-medium mt-8 mb-4;
+}
+
+#markdown p {
+  @apply text-base mb-4;
+}
+
+#markdown strong {
+  @apply font-medium;
+}
+
+#markdown a {
+  @apply underline hover:no-underline;
+}
+
+#markdown h2 {
+  @apply text-2xl font-semibold mt-8 mb-3;
+}
+
+#markdown code {
+  @apply bg-neutral-700 text-white px-1 py-0.5 rounded-md;
+}
+
+#markdown table {
+  @apply table-auto w-full border-collapse mb-4;
+}
+
+#markdown th {
+  @apply border-b border-neutral-400 px-4 py-2 text-left;
+}
+
+#markdown td {
+  @apply px-4 py-2;
+}
+
+#markdown tr:not(:last-child) {
+  @apply border-b border-neutral-600;
+}
+
+#markdown em {
+  @apply italic;
+}

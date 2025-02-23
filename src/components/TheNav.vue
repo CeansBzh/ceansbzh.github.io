@@ -18,6 +18,14 @@
             À propos de moi
           </router-link>
         </li>
+        <li class="active:text-neutral-200">
+          <router-link
+            :to="{ name: 'notes' }"
+            class="transition-colors duration-300 after:absolute after:-bottom-1 after:left-0 after:-z-10 after:h-1 after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#3a6a2c] after:transition-transform after:duration-500 after:ease-out after:content-[''] hover:text-white hover:after:origin-bottom-left hover:after:scale-x-100 sm:hover:translate-y-0"
+          >
+            Notes
+          </router-link>
+        </li>
       </ul>
     </nav>
   </div>

@@ -9,7 +9,7 @@ import EducationItem from '../components/EducationItem.vue';
       class="mx-auto max-w-xl px-5 sm:px-0 sm:py-20 lg:py-24 xl:py-28 2xl:max-w-2xl 2xl:py-52"
     >
       <div class="mx-auto mb-10 max-w-2xl">
-        <h1 class="mb-8 font-bold uppercase text-neutral-400">Sommaire</h1>
+        <h1 class="mb-8 font-black uppercase text-neutral-400">Sommaire</h1>
       </div>
 
       <nav class="text-lg">
@@ -47,7 +47,7 @@ import EducationItem from '../components/EducationItem.vue';
       class="mx-auto max-w-xl px-5 sm:px-0 sm:py-20 lg:py-24 xl:py-28 2xl:max-w-2xl 2xl:py-44"
     >
       <div class="mb-10">
-        <h1 class="mb-8 font-bold uppercase text-neutral-400">Qui suis-je</h1>
+        <h1 class="mb-8 font-black uppercase text-neutral-400">Qui suis-je</h1>
       </div>
 
       <div
@@ -89,7 +89,7 @@ import EducationItem from '../components/EducationItem.vue';
       class="mx-auto max-w-xl px-5 sm:px-0 sm:py-20 lg:py-24 xl:py-28 2xl:max-w-2xl 2xl:py-44"
     >
       <div class="mb-10">
-        <h1 class="mb-8 font-bold uppercase text-neutral-400">Formation</h1>
+        <h1 class="mb-8 font-black uppercase text-neutral-400">Formation</h1>
       </div>
 
       <ol>
@@ -152,7 +152,7 @@ import EducationItem from '../components/EducationItem.vue';
       class="mx-auto max-w-xl px-5 sm:px-0 sm:py-20 lg:py-24 xl:py-28 2xl:max-w-2xl 2xl:py-44"
     >
       <div class="mb-10">
-        <h1 class="mb-8 font-bold uppercase text-neutral-400">
+        <h1 class="mb-8 font-black uppercase text-neutral-400">
           Expérience professionnelle
         </h1>
       </div>
