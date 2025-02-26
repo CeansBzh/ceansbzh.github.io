@@ -14,4 +14,10 @@ Inspiration : [Zanca.dev](https://zanca.dev/notes/Zen-Browser-Config)
 | ------------------- | ---------- |
 | Save page           | _Not set_  |
 | Toggle Compact Mode | \`ctrl+s\`   |
+
+## Apparence (Look and Feel)
+
+| **Paramètre**                      | **Valeur** |
+| ---------------------------------- | ---------- |
+| Move the new tab button to the top | \`false\`    |
 `;export{n as default};
