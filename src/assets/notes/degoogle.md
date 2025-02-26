@@ -9,6 +9,8 @@
 | Google Calendar & Google Contacts | [Framagenda](https://framagenda.org) pour l'hébergement, [Thunderbird](https://www.thunderbird.net) comme client PC, Samsung Calendar & Contacts sur mobile | J'utilise [DAVx5](https://www.davx5.com/) pour la synchronisation sur mobile |
 | Google Translate                  | [DeepL](https://www.deepl.com)                                                                                                                              |                                                                              |
 | Google Photos                     | [Ente](https://ente.io)                                                                                                                                     | 10Go de stockage gratuit en utilisant un code de parrainage                  |
+| Google Keep                       | [Notesnook](https://notesnook.com/)                                                                                                                         |                                                                              |
+| GBoard                            | [Florisboard](https://florisboard.org/)                                                                                                                     |                                                                              |
 
 ## Pourquoi
 
