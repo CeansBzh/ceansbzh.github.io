@@ -1,9 +1,9 @@
 #markdown h1 {
-  @apply text-3xl font-medium mt-8 mb-4;
+  @apply mb-4 mt-8 text-3xl font-medium;
 }
 
 #markdown p {
-  @apply text-base mb-4;
+  @apply mb-4 text-justify;
 }
 
 #markdown strong {
@@ -15,15 +15,27 @@
 }
 
 #markdown h2 {
-  @apply text-2xl font-semibold mt-8 mb-3;
+  @apply mb-3 mt-8 text-2xl font-semibold;
+}
+
+#markdown ul {
+  @apply mb-4 list-disc pl-4;
+}
+
+#markdown ol {
+  @apply mb-4 list-decimal pl-4;
+}
+
+#markdown li {
+  @apply mb-2;
 }
 
 #markdown code {
-  @apply bg-neutral-700 text-white px-1 py-0.5 rounded-md;
+  @apply rounded-md bg-neutral-700 px-1 py-0.5 text-white;
 }
 
 #markdown table {
-  @apply table-auto w-full border-collapse mb-4;
+  @apply mb-4 w-full table-auto border-collapse;
 }
 
 #markdown th {
