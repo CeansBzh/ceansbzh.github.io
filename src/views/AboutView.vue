@@ -4,14 +4,9 @@ import EducationItem from '../components/EducationItem.vue';
 </script>
 
 <template>
-  <main class="pb-40">
-    <section
-      class="mx-auto max-w-xl px-5 sm:px-0 sm:py-20 lg:py-24 xl:py-28 2xl:max-w-2xl 2xl:py-52"
-    >
-      <div class="mx-auto mb-10 max-w-2xl">
-        <h1 class="mb-8 font-black uppercase text-neutral-400">Sommaire</h1>
-      </div>
-
+  <main class="mx-auto max-w-xl px-5 pb-40 2xl:max-w-2xl">
+    <section class="py-20 lg:py-24 xl:py-28 2xl:py-52">
+      <h1 class="mb-10 font-black uppercase text-neutral-400">Sommaire</h1>
       <nav class="text-lg">
         <ul class="flex flex-col space-y-5 text-neutral-300">
           <li>
@@ -42,16 +37,10 @@ import EducationItem from '../components/EducationItem.vue';
       </nav>
     </section>
 
-    <section
-      id="whoami"
-      class="mx-auto max-w-xl px-5 sm:px-0 sm:py-20 lg:py-24 xl:py-28 2xl:max-w-2xl 2xl:py-44"
-    >
-      <div class="mb-10">
-        <h1 class="mb-8 font-black uppercase text-neutral-400">Qui suis-je</h1>
-      </div>
-
+    <section id="whoami" class="py-20 lg:py-24 xl:py-28 2xl:py-44">
+      <h1 class="mb-10 font-black uppercase text-neutral-400">Qui suis-je</h1>
       <div
-        class="flex flex-col space-y-3 text-justify text-base leading-loose tracking-wide text-neutral-300"
+        class="flex flex-col space-y-3 text-base leading-loose tracking-wide text-neutral-300 sm:text-justify"
       >
         <p class="mb-3 text-lg text-neutral-200">
           Je suis Elouan Briantais, développeur web chez
@@ -61,13 +50,13 @@ import EducationItem from '../components/EducationItem.vue';
             aria-label="Voir le projet"
             >Voyelle</AppLink
           >
-          et étudiant en informatique à l'<AppLink
+          et étudiant en informatique à
+          <AppLink
             to="https://istic.univ-rennes.fr/"
             class="underline decoration-2 underline-offset-2"
             aria-label="Voir le projet"
-            >ISTIC</AppLink
-          >
-          .
+            >l'ISTIC</AppLink
+          >.
         </p>
         <p>
           Ma spécialité est le développement back-end, mais j'aime aussi créer
@@ -84,23 +73,17 @@ import EducationItem from '../components/EducationItem.vue';
       </div>
     </section>
 
-    <section
-      id="education"
-      class="mx-auto max-w-xl px-5 sm:px-0 sm:py-20 lg:py-24 xl:py-28 2xl:max-w-2xl 2xl:py-44"
-    >
-      <div class="mb-10">
-        <h1 class="mb-8 font-black uppercase text-neutral-400">Formation</h1>
-      </div>
-
-      <ol>
+    <section id="education" class="py-20 lg:py-24 xl:py-28 2xl:py-44">
+      <h1 class="mb-10 font-black uppercase text-neutral-400">Formation</h1>
+      <ol class="ml-1">
         <li class="border-l border-neutral-600 pb-10">
           <EducationItem>
             <template #time>2023 - 2025</template>
             <template #place>ISTIC, Université de Rennes</template>
-            <template #title>Master informatique</template>
+            <template #title
+              >Master informatique - parcours Ingénierie Logicielle</template
+            >
             <template #body>
-              Spécialité Ingénierie Logicielle pour m'orienter vers le
-              développement d'application web complexes.
               <ul class="ml-3 mt-2 list-inside list-disc">
                 <li>Programmation réseau</li>
                 <li>Conception orientée utilisateur</li>
@@ -116,7 +99,6 @@ import EducationItem from '../components/EducationItem.vue';
             <template #place>ISTIC, Université de Rennes</template>
             <template #title>Licence informatique</template>
             <template #body>
-              3ème année de licence pour compléter mes 2 années de DUT.
               <ul class="ml-3 mt-2 list-inside list-disc">
                 <li>Programmation de confiance</li>
                 <li>Algorithmie</li>
@@ -134,7 +116,6 @@ import EducationItem from '../components/EducationItem.vue';
             </template>
             <template #title>DUT informatique</template>
             <template #body>
-              Début des études supérieures en informatique.
               <ul class="ml-3 mt-2 list-inside list-disc">
                 <li>Théorie des langages</li>
                 <li>Bases de données</li>
@@ -147,10 +128,7 @@ import EducationItem from '../components/EducationItem.vue';
       </ol>
     </section>
 
-    <section
-      id="experience"
-      class="mx-auto max-w-xl px-5 sm:px-0 sm:py-20 lg:py-24 xl:py-28 2xl:max-w-2xl 2xl:py-44"
-    >
+    <section id="experience" class="py-20 lg:py-24 xl:py-28 2xl:py-44">
       <div class="mb-10">
         <h1 class="mb-8 font-black uppercase text-neutral-400">
           Expérience professionnelle
@@ -163,8 +141,9 @@ import EducationItem from '../components/EducationItem.vue';
             to="https://www.voyelle.fr/"
             class="mb-1 block text-lg underline underline-offset-2"
             aria-label="Voir le projet"
-            >Voyelle</AppLink
           >
+            Voyelle
+          </AppLink>
           <p class="mb-2 text-base text-neutral-300">
             Alternant développeur Web
           </p>
@@ -175,8 +154,9 @@ import EducationItem from '../components/EducationItem.vue';
             to="https://www.neovote.com/"
             class="mb-1 block text-lg underline underline-offset-2"
             aria-label="Voir le projet"
-            >Neovote</AppLink
           >
+            Neovote
+          </AppLink>
           <p class="mb-2 text-base text-neutral-300">
             Alternant développeur PHP
           </p>
