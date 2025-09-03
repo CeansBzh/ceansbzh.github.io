@@ -49,13 +49,6 @@ import EducationItem from '../components/EducationItem.vue';
             class="underline decoration-2 underline-offset-2"
             aria-label="Voir le projet"
             >Voyelle</AppLink
-          >
-          et étudiant en informatique à
-          <AppLink
-            to="https://istic.univ-rennes.fr/"
-            class="underline decoration-2 underline-offset-2"
-            aria-label="Voir le projet"
-            >l'ISTIC</AppLink
           >.
         </p>
         <p>
@@ -144,10 +137,10 @@ import EducationItem from '../components/EducationItem.vue';
           >
             Voyelle
           </AppLink>
-          <p class="mb-2 text-base text-neutral-300">
-            Alternant développeur Web
-          </p>
-          <time class="text-neutral-400">Mai 2023 (en cours)</time>
+          <p class="mb-2 text-base text-neutral-300">Développeur web backend</p>
+          <time class="text-neutral-400">
+            Mai 2023 - Aujourd'hui (en cours)
+          </time>
         </li>
         <li class="mb-14">
           <AppLink
