@@ -17,7 +17,8 @@ Inspiration : [Zanca.dev](https://zanca.dev/notes/Zen-Browser-Config)
 
 ## Apparence (Look and Feel)
 
-| **Paramètre**                      | **Valeur** |
-| ---------------------------------- | ---------- |
-| Move the new tab button to the top | \`false\`    |
+| **Paramètre**                      | **Valeur**          |
+| ---------------------------------- | ------------------- |
+| Browser Layout                     | \`Collapsed toolbar\` |
+| Move the new tab button to the top | \`false\`             |
 `;export{n as default};
