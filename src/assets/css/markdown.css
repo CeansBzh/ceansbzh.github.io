@@ -2,7 +2,7 @@
   @apply mb-4 mt-8 text-3xl font-medium;
 }
 
-#markdown p {
+#markdown p, #markdown pre {
   @apply mb-4 text-justify;
 }
 
